@@ -25,7 +25,7 @@ k get nodes
 kubectl get nodes
 ```
 
-The main difference from using kubectl directly is the ability to define the current namespace using a local temporary environment variable. Simply define `export namespace=mynamespace` and all subsequent calls to `k` will equivalent to `kubectl -n mynamespace`.
+The main difference from using kubectl directly is the ability to define the current namespace using a local temporary environment variable. Simply define `export namespace=mynamespace` and all subsequent calls to `k` will be equivalent to `kubectl -n mynamespace`.
 
 ```bash
 export namespace=mynamespace
