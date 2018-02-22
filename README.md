@@ -4,7 +4,7 @@ A number of simple bash scripts to help with daily kubectl tasks.
 
 ## Installation
 
-To use, simply copy from `bin/*` into a known path location in your system - i.e. `/usr/local/bin`. Mark them as executable and enjoy.
+To use, simply copy from `bin/*` into a known path location in your system, for example `/usr/local/bin`. Mark them as executable and enjoy.
 
 ```bash
 chmod +x bin/*
