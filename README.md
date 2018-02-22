@@ -56,10 +56,10 @@ klego-kube-lego-56fb6cc774-mqhvq   1/1       Running   2          27d
 nginx-6j76t                        2/2       Running   0          11h
 nginx-jqsbl                        2/2       Running   0          11h
 
-root@node0:~# k delete pod nginx-jqsbl
+root@node0:~# kdelete pod nginx-jqsbl
 pod "nginx-jqsbl" deleted
 
-root@node0:~# k logs nginx-6j76t -c nginx
+root@node0:~# klogs nginx-6j76t -c nginx
 ......
 ```
 
