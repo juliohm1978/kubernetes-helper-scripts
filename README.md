@@ -69,5 +69,11 @@ The following is a complete list of available scripts that follow that same idea
 
 Script | Equivalent kubectl
 ------ | ------------------
-k | kubectl -n $namespace
-kapply | kubectl kubectl -n $namespace
+`k` | `kubectl -n $namespace`
+`kapply` | `kubectl -n $namespace apply`
+`kdelete` | `kubectl -n $namespace delete`
+`kedit` | `kubectl -n $namespace edit`
+`kget` | `kubectl -n $namespace get`
+`klogs` | `kubectl -n $namespace logs`
+`knodes` | `kubectl -n $namespace get nodes`
+`kpods` | `kubectl -n $namespace get pods`
