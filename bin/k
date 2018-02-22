@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ "$namespace" != "" ]]; then
+  if [[ "$namespace" == "." ]]; then
+    namespace="--all-namespaces"
+  else
+    namespace="-n $namespace"
+  fi
+fi
+
+kubectl $namespace $@ 
