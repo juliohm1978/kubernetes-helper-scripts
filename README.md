@@ -67,6 +67,7 @@ root@node0:~# k logs nginx-6j76t -c nginx
 
 The following is a complete list of available scripts that follow that same idea.
 
-|| Script || Equivalent kubectl ||
-| k | kubectl -n $namespace |
-| kapply | kubectl kubectl -n $namespace |
+Script | Equivalent kubectl
+------ | ------------------
+k | kubectl -n $namespace
+kapply | kubectl kubectl -n $namespace
