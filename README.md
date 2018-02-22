@@ -63,6 +63,8 @@ root@node0:~# k logs nginx-6j76t -c nginx
 ......
 ```
 
+Whenever `$namespace` is not defined or empty, the default namespace is used.
+
 ## Available Scripts
 
 The following is a complete list of available scripts that follow that same idea.
