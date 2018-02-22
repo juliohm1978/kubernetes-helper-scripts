@@ -38,7 +38,7 @@ k get pods
 kubectl -n mynamespace get pods
 ```
 
-To make things even simpler, shorter named scripts are also available. For example, `kpods` is another shorthand for `k get pods`. Once your namespace environment variable is defined, getting all pods from that namespace should be as easy as:
+To make things even simpler, shorter named scripts are also available. For example, `kpods` is another shorthand for `k get pods`. Once `$namespace` is defined, getting all pods from that namespace should be as easy as:
 
 ```bash
 kpods
