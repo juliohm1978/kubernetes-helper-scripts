@@ -44,7 +44,7 @@ To make things even simpler, shorter named scripts are also available. For examp
 kpods
 ```
 
-This way, handling pods from the command line should be easier when you wish to focus on one particular namespace.
+Handling pods from the command line should be much easier when you wish to focus on one particular namespace.
 
 ```bash
 root@node0:~# export namespace=frontend
