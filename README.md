@@ -37,3 +37,28 @@ k get pods
 ```bash
 kubectl -n mynamespace get pods
 ```
+
+To make things even simpler, `kpods` is also available, which is another shorthand for `k get pods`. Once your namespace environment variable is defined, getting all pods from that namespace should be as easy as:
+
+```bash
+kpods
+```
+
+This way, handling pods from the command line should be easier when you wish to focus on one particular namespace.
+
+```bash
+root@node0:~# export namespace=frontend
+
+root@node0:~# kpods
+NAME                               READY     STATUS    RESTARTS   AGE
+defaultbackend-644697fdfd-g59h9    1/1       Running   0          1d
+klego-kube-lego-56fb6cc774-mqhvq   1/1       Running   2          27d
+nginx-6j76t                        2/2       Running   0          11h
+nginx-jqsbl                        2/2       Running   0          11h
+
+root@node0:~# k delete pod nginx-jqsbl
+pod "nginx-jqsbl" deleted
+
+root@node0:~# k logs nginx-6j76t -c nginx
+......
+```
