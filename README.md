@@ -47,20 +47,21 @@ kpods
 Handling pods from the command line should be much easier when you wish to focus on one particular namespace.
 
 ```bash
-root@node0:~# export namespace=frontend
+$ export namespace=frontend
 
-root@node0:~# kpods
+$ kpods
 NAME                               READY     STATUS    RESTARTS   AGE
 defaultbackend-644697fdfd-g59h9    1/1       Running   0          1d
 klego-kube-lego-56fb6cc774-mqhvq   1/1       Running   2          27d
 nginx-6j76t                        2/2       Running   0          11h
 nginx-jqsbl                        2/2       Running   0          11h
 
-root@node0:~# kdelete pod nginx-jqsbl
+$ kdelete pod nginx-jqsbl
 pod "nginx-jqsbl" deleted
 
-root@node0:~# klogs nginx-6j76t -c nginx
-......
+$ klogs nginx-6j76t -c nginx
+
+<snipped>
 ```
 
 Whenever `$namespace` is not defined or empty, the default namespace is used.
