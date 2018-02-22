@@ -13,7 +13,7 @@ sudo cp bin/* /usr/local/bin/
 
 ## How To Use
 
-`k` is basically a shorthand for `kubectl`. By default, it should work as an alias and all extra paramters should also be streamlined into `kubectl`.
+`k` is basically a shorthand for `kubectl`. By default, it should work as an alias and all command line parameters will be streamlined into `kubectl`.
 
 ```bash
 k get nodes
