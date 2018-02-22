@@ -77,3 +77,4 @@ Script | Equivalent kubectl
 `klogs` | `kubectl -n $namespace logs`
 `knodes` | `kubectl -n $namespace get nodes`
 `kpods` | `kubectl -n $namespace get pods`
+`kallpods` | `kubectl get pods --all-namespaces`
