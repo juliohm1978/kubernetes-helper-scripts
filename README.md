@@ -20,7 +20,7 @@ To change the installation directory, override INSTALLDIR:
 INSTALLDIR=/my/custom/bin make install
 ```
 
-To skip any confirmation, define the variable `SKIP_CONFIRMATION=true`.
+To skip any confirmation, define `SKIP_CONFIRMATION=true`.
 
 ```bash
 SKIP_CONFIRMATION=true INSTALLDIR=/my/custom/bin make install
@@ -40,7 +40,7 @@ To make sure any files from a previous version are not left behind, you will nee
 
 ## Manual Installation
 
-To use, simply copy from `bin/*` into a known path location in your system, for example `/usr/local/bin`. Mark them as executable and enjoy.
+Simply copy from `bin/*` into a known path location in your system, for example `/usr/local/bin`. Mark them as executable and enjoy.
 
 ```bash
 chmod +x bin/*
