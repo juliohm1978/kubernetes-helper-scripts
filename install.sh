@@ -38,7 +38,7 @@ while true; do
     read -p "Continue (y/n)?" yn
     case $yn in
         [Yy]* ) echo " "; break;;
-        [Nn]* ) exit 1;;
+        [Nn]* ) exit 0;;
         * ) echo "Please answer yes or no.";;
     esac
 done
