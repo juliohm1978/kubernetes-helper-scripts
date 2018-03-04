@@ -4,6 +4,36 @@ A number of simple bash scripts to help with daily kubectl tasks.
 
 ## Installation
 
+A `Makefile` and installation scripts have been added for convenience. To install, the following should be enough:
+
+```bash
+git clone https://github.com/juliohm1978/kubernetes-helper-scripts.git
+cd kubernetes-helper-scripts
+make install
+```
+
+A list of the files to be copied will be presented before continuing.
+
+**NOTE**: The installation script will NOT backup any files already in the destination directory. They will be overwritten.
+
+To change the installation directory, override INSTALLDIR:
+
+```bash
+INSTALLDIR=/my/custom/bin make install
+```
+
+To uninstall:
+
+```bash
+make uninstall
+```
+
+**NOTE 2**: Installation will NOT remove files from a previous version.
+
+To make sure any files from a previous version are not left behind, you will need to uninstall that version before installing a new one.
+
+## Manual Installation
+
 To use, simply copy from `bin/*` into a known path location in your system, for example `/usr/local/bin`. Mark them as executable and enjoy.
 
 ```bash
