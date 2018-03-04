@@ -46,7 +46,7 @@ if [[ "$SKIP_CONFIRMATION" != "true" ]]; then
 fi
 
 chmod +x bin/*
-sudo cp -vr bin/* /usr/local/bin/
+sudo cp -vr bin/* "$INSTALLDIR"
 
 echo
 echo "Installation completed"

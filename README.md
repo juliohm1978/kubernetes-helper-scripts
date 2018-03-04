@@ -12,15 +12,21 @@ cd kubernetes-helper-scripts
 make install
 ```
 
-A list of the files to be copied will be presented before continuing.
-
-**NOTE**: The installation script will NOT backup any files already in the destination directory. They will be overwritten.
+A list of the files to be copied will be presented and a prompt will wait before continuing.
 
 To change the installation directory, override INSTALLDIR:
 
 ```bash
 INSTALLDIR=/my/custom/bin make install
 ```
+
+To skip any confirmation, define the variable `SKIP_CONFIRMATION=true`.
+
+```bash
+SKIP_CONFIRMATION=true INSTALLDIR=/my/custom/bin make install
+```
+
+**NOTE**: The installation script will NOT backup any files already in the destination directory. They will be overwritten.
 
 To uninstall:
 
