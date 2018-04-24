@@ -1,0 +1,6 @@
+#!/bin/bash
+
+OBJECTNAME=$1
+shift
+
+k get -o yaml $OBJECTNAME $@ | egrep -v "creationTimestamp|resourceVersion|selfLink|uid:"

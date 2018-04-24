@@ -61,10 +61,10 @@ k get nodes
 kubectl get nodes
 ```
 
-The main difference from using `kubectl` directly is the ability to define the current namespace using a local temporary environment variable. Simply define `export namespace=mynamespace` and all subsequent calls to `k` will be equivalent to `kubectl -n mynamespace`.
+The main difference from using `kubectl` directly is the ability to define the current namespace using a local temporary environment variable. Simply define `export ns=mynamespace` and all subsequent calls to `k` will be equivalent to `kubectl -n mynamespace`.
 
 ```bash
-export namespace=mynamespace
+export ns=mynamespace
 k get pods
 ```
 
@@ -83,7 +83,7 @@ kpods
 Handling pods from the command line should be much easier when you wish to focus on one particular namespace.
 
 ```bash
-$ export namespace=frontend
+$ export ns=frontend
 
 $ kpods
 NAME                               READY     STATUS    RESTARTS   AGE

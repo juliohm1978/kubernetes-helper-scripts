@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [[ "$ns" != "" ]]; then
+  namespace=$ns
+fi
+
 if [[ "$namespace" != "" ]]; then
   if [[ "$namespace" == "." ]]; then
     namespace="--all-namespaces"
