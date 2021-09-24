@@ -1,3 +1,9 @@
 #!/bin/bash
 
-k get nodes $@
+OPTS="$@"
+if [[ "$OPTS" == "" ]]
+then
+  OPTS="-owide"
+fi
+
+k get nodes $OPTS
